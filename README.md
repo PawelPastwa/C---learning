@@ -8,9 +8,7 @@ understand and improve my skill in this field.
 
 lesson 1 - Basics of creating algorithms.
 
-lesson 2 - Simple imperative programs. Data input and output. Variables of different types. Assignment statement. Expressions.
-
-lesson 3 - Simple structural programs. Standard functions and custom functions. Function arguments.
+lesson 2 - Simple imperative programs. Data input and output. Variables of different types. Assignment statement. Expressions. Simple structural programs. Standard functions and custom functions. Function arguments.
 
 lesson 4 - IF, IF...ELSE conditional instructions. Conditional operator. SWITCH selection instructions. BREAK statement.
 
