@@ -10,23 +10,23 @@ lesson 1 - Basics of creating algorithms.
 
 lesson 2 - Simple imperative programs. Data input and output. Variables of different types. Assignment statement. Expressions. Simple structural programs. Standard functions and custom functions. Function arguments.
 
-lesson 4 - IF, IF...ELSE conditional instructions. Conditional operator. SWITCH selection instructions. BREAK statement.
+lesson 3 - IF, IF...ELSE conditional instructions. Conditional operator. SWITCH selection instructions. BREAK statement.
 
-lesson 5 - Iterative instructions WHILE, DO...WHILE. CONTINUE statement.
+lesson 4 - Iterative instructions WHILE, DO...WHILE. CONTINUE statement.
 
-lesson 6 - Iterative FOR statement.
+lesson 5 - Iterative FOR statement.
 
-lesson 7 - Functions with pointer arguments.
+lesson 6 - Functions with pointer arguments.
 
-lesson 8 - Static arrays.
+lesson 7 - Static arrays.
 
-lesson 9 - Dynamic memory allocation. Dynamic arrays.
+lesson 8 - Dynamic memory allocation. Dynamic arrays.
 
-lesson 10 - Strings and string functions.
+lesson 9 - Strings and string functions.
 
-lesson 11 - Complex data types. Structures and unions.
+lesson 10 - Complex data types. Structures and unions.
 
-lesson 12 - Complex data types. Files.
+lesson 11 - Complex data types. Files.
 
 My current objective is to learn as much as possible to gain more knowlage. I'm open for
 any intership offer :)
