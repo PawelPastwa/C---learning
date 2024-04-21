@@ -1,35 +1,34 @@
 #include <stdio.h>
 
-int ilenieujemnych(int k, int* rowna);
+int licznik(int n, int* a);
 
 int main() {
 
-    int k;
-    int rowna = 0;
-    int nieujemne = 0;
-    printf("Podaj ilosc liczb:\n");
-    scanf("%d", &k);
-    nieujemne = ilenieujemnych(k, &rowna);
-    printf("Liczb > 0: %d\nLiczb = 0: %d", nieujemne, rowna);
+    int a = 0;
+    int n;
+
+    printf("Podaj ilosc liczb: ");
+    scanf("%d", &n);
+    printf("Liczb > 0 jest %d\n", licznik(n, &a));
+    printf("liczb == 0 jest %d", a);
 
     return 0;
 }
 
-int ilenieujemnych(int k, int* rowna)
-{
-    int i = 0;
-    float liczba;
-    int wieksza;
-    wieksza = 0;
+int licznik(int n, int* a){
 
-    while (i < k)
-    {
-        printf("Podaj liczbe:\n");
-        getchar();
-        scanf("%f", &liczba);
-        if (liczba > 0) wieksza++;
-        else if (liczba == 0) (*rowna)++;
+    int i = 0;
+    int liczba;
+    int licznik = 0;
+
+    while (i < n){
+        printf("Podaj %d liczbe: ", i+1);
+        scanf("%d", &liczba);
+        if (liczba == 0)
+            (*a)++;
+        else if (liczba > 0)
+            licznik++;
         i++;
     }
-    return wieksza;
+    return licznik;
 }
