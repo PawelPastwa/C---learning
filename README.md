@@ -1,4 +1,4 @@
-First year (college)
+Second year (college)
 
 Theese repositories represent progress of my education at the university.
 Before college I had no experience in coding so you can see my progress from scrach.
