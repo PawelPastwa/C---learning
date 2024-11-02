@@ -6,6 +6,8 @@ Before college I had no experience in coding so you can see my progress from scr
 Every lesson folder represent more or less subject we had on our lesson and tasks i did to
 understand and improve my skill in this field.
 
+First year:
+
 lesson 1 - Basics of creating algorithms.
 
 lesson 2 - Simple imperative programs. Data input and output. Variables of different types. Assignment statement. Expressions. Simple structural programs. Standard functions and custom functions. Function arguments.
@@ -29,6 +31,6 @@ lesson 10 - Complex data types. Structures and unions.
 lesson 11 - Complex data types. Files.
 
 My current objective is to learn as much as possible to gain more knowlage. I'm open for
-any intership offer :)
+any intership/job offer :)
 
 uploding files/codes - work in progress...
