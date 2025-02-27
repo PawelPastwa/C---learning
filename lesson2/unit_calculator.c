@@ -1,27 +1,83 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
-{
-    float km = 0, mila = 0, KM = 0, w = 0, kmh = 0, ms = 0, f = 0, c = 0, mila2 = 0, km2 = 0;
-    printf("Podaj odleglosc w km: \n");
-    scanf("%f", &km);
-    printf("Podaj odleglosc w milach: \n");
-    scanf("%f", &mila2);
-    printf("Podaj ilosc koni mechanicznych: \n");
-    scanf("%f", &KM);
-    printf("Podaj predkosc w km/h: \n");
-    scanf("%f", &kmh);
-    printf("Podaj temperature w stopniach celcjusza: \n");
-    scanf("%f", &c);
+//prototypy
 
-    mila = km * 0.625;
-    km2 = mila2*1.6;
-    w = KM * 735;
-    ms = kmh * (1000.0 / 3600.0);
-    f = (c * 9.0 / 5.0) + 32.0;
+float mil_n_km(float mil);
 
-    printf("%f km to %f mil\n%f mil to %f km\n%f koni mechanicznych to %f wat\n%f km/h to %f m/s\n%f stopni celcjusza to %f stopni farenheita", km, mila, mila2, km2, KM, w, kmh, ms, c, f);
+float km_n_mil(float km);
 
+float k_n_w(float konie);
+
+float kmh_n_ms(float kmh);
+
+float f_n_c(float f);
+
+int main() {
+    int nr = 1;
+
+    while(nr){
+        printf("Wybierz opcje\n1 - Mile na kilometry\n2 - Kilometry na mile\n3 - Konie mechaniczne na waty\n4 - Kilometry na godzine na metry na sekunde\n5 - Stopnie Fahrenheita na stopnie Celsjusza\n 0 - zakoncz program\n");
+        scanf("%d", &nr);
+
+        if (nr == 1){
+            float mile;
+            printf("Podaj ile mil:\n");
+            scanf("%f", &mile);
+            printf("%f mil to %f kilometrow:\n", mile, mil_n_km(mile));
+        }
+        else if (nr == 2){
+            float kilometry;
+            printf("Podaj ile kilometrow:\n");
+            scanf("%f", &kilometry);
+            printf("%f kilometrow to %f mil\n", kilometry, km_n_mil(kilometry));
+        }
+
+        else if (nr == 3){
+            float konie;
+            printf("Podaj ile koni:\n");
+            scanf("%f", &konie);
+            printf("%f koni to %f watow\n", konie, k_n_w(konie));
+        }
+        else if (nr == 4){
+            float kmh;
+            printf("Podaj ile kmh:\n");
+            scanf("%f", &kmh);
+            printf("%f kmh to %f ms\n", kmh, kmh_n_ms(kmh));
+        }
+
+        else if (nr == 5){
+            float f;
+            printf("Podaj ile stopni Fahrenheita:\n");
+            scanf("%f", &f);
+            printf("%f stopni Fahrenheita to %f stopni Celsjusza\n", f, f_n_c(f));
+        }
+
+        else if (nr == 0){
+            printf("Dziekujemy za skorzystanie z programu\n");
+        } else
+            printf("Wybrano niepoprawna opcje, sprbuj ponownie");
+    }
     return 0;
+}
+
+//definicje
+
+float mil_n_km(float mil){
+    return mil*1.6;
+}
+
+float km_n_mil(float km){
+    return km/1.6;
+}
+
+float k_n_w(float konie){
+    return konie*735;
+}
+
+float kmh_n_ms(float kmh){
+    return kmh/3.6;
+}
+
+float f_n_c(float f){
+    return (f-32)*(5/9.0);
 }
