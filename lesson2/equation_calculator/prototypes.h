@@ -1,5 +1,6 @@
 #ifndef PROTOTYPY_H_INCLUDED
 #define PROTOTYPY_H_INCLUDED
+#include <math.h>
 
 float a(float x);
 float b(float x);
