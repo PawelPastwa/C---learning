@@ -1,3 +1,5 @@
+#include "prototypy.h"
+
 float a(float x)
 {
     return 10*cos(x) - 0.1*pow(x, 2) + sin(x) + sqrt(4*pow(x, 2) + 7);
