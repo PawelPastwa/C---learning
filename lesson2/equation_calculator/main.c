@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "prototypy.h"
-#include "deklaracje.c"
 
 int main()
 {
@@ -18,9 +16,6 @@ int main()
     printf("wynik rownania b to %f\n", b(x));
     printf("Wynik rownania c to %f\n", c(alfa));
     printf("Wynik rownania d to %f\n", d(beta));
-
-
-
 
     return 0;
 }
