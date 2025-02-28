@@ -5,6 +5,7 @@
 int main()
 {
     //deklaracje
+    //including doors and window in the room, window 1x0.9, door 2x0.8
 
     float a;
     float b;
