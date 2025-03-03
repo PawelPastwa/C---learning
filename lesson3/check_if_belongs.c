@@ -15,11 +15,12 @@ int main()
 
 
 //definicja funkcji
-czynalezy(float x, float y)
+void czynalezy(float x, float y)
 {
     if (x <= 1 && x >= -1)
     {
-        if (y >= -1 && y <= 1) printf("Punkt nalezy do zamalowanego obszaru");
+        if (y >= -1 && y <= 1) printf("Punkt nalezy do obszaru tworzonego przez kwadrat (-1,-1),(1,-1),(1,1),(-1,1)");
+        else printf("Punkt nie nalezy do obszaru tworzonego przez kwadrat (-1,-1),(1,-1),(1,1),(-1,1)");
     }
-    else printf("Punkt nie nalezy do zadnej cwiartki");
+    else printf("Punkt nie nalezy do obszaru tworzonego przez kwadrat (-1,-1),(1,-1),(1,1),(-1,1)");
 }
