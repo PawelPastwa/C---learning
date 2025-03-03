@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
+
 
 //prototyp funkcji
 void poleTrojkata(float a, float b, float c);
