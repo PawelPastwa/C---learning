@@ -14,7 +14,6 @@ int main()
 
     printf("Podaj t\n");
     scanf("%d", &t);
-    //zad 5.3
     printf("\nPodaj kat\n");
     scanf("%f", &alpha);
     printf("Obliczenie w if wynosi: %f\nObliczanie w switch wynosi: %f", obliczanieif(t, alpha), obliczanieswitch(t, alpha));
@@ -22,7 +21,6 @@ int main()
 
 }
 //definicja funkcji
-//zad.5.3
 
 float obliczanieif(int t, float alpha)
 {
