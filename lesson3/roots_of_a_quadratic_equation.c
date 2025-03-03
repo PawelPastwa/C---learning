@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 
 //prototyp funkcji
 void pierwiastekRK(float a, float b, float c);
