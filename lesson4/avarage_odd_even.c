@@ -1,8 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
-//prototyp funkcji
 void sredniaPiNP(int liczba);
 
 int main()
@@ -13,22 +10,19 @@ int main()
 }
 void sredniaPiNP(int liczba)
 {
-    int licznikp, liczniknp;
+    int licznikp = 0, liczniknp = 0;
     float sumap = 0, sumanp = 0, sredniap = 0, srednianp = 0;
-    licznikp = 0;
-    sumanp = 0;
-    sumap = 0;
 
     do
     {
         printf("Podaj liczbe:\n");
         scanf("%d", &liczba);
-        if (liczba % 2 == 0)
+        if (liczba % 2 == 0 && liczba != 0)
         {
             sumap += liczba;
             licznikp++;
         }
-        else
+        else if(liczba % 2 != 0)
         {
             sumanp += liczba;
             liczniknp++;
