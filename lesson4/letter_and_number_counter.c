@@ -31,8 +31,4 @@ void ileznakow()
     while (znak != '.');
 
     printf("Litera '%c' wystapila w zdaniu %d razy, liczba cyfr: %d\n", litera, ileliter, ilecyfr);
-
-
-
-
 }
