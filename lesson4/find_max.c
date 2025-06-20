@@ -15,7 +15,7 @@ void najwieksza()
 
     while (liczba != -1)
     {
-        printf("Podaj liczbe calkowita (-1 by porownac):\n");
+        printf("Podaj liczbe (-1 by porownac):\n");
         scanf("%f", &liczba);
         if (liczba > top) top = liczba;
     }
