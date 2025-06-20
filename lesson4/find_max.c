@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 //prototyp funkcji
 void najwieksza();
@@ -16,8 +15,8 @@ void najwieksza()
 
     while (liczba != -1)
     {
-        printf("Podaj liczbe:\n");
-        scanf("%f", &liczba);
+        printf("Podaj liczbe calkowita (-1 by porownac):\n");
+        scanf("%d", &liczba);
         if (liczba > top) top = liczba;
     }
     printf("najwieksza liczba sposrod podanych wynosi: %f", top);
