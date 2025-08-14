@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main()
 {
     //deklaracje
@@ -29,7 +28,7 @@ int main()
         n--;
     }
 
-    printf("Srednia z egzaminow wynosi: %f", s/n0);
+    printf("Srednia z egzaminow wynosi: %f", s/(float)n0);
 
     return 0;
 }
