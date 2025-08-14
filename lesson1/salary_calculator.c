@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
 int main()
 {
@@ -17,8 +15,19 @@ int main()
 
     printf("Podaj liczbe pracownikow:\n");
     scanf("%d", &pracownicy);
+    while (pracownicy <= 0)
+    {
+        printf("Podaj poprawna liczbe pracownikow:\n");
+        scanf("%d", &pracownicy);
+    }
     printf("\nPodaj wartosc stawki bazowej:\n");
     scanf("%d", &baza);
+
+    while (baza <= 0)
+    {
+        printf("Podaj poprawna wartosc stawki bazowej:\n");
+        scanf("%d", &baza);
+    }
 
     float wyplatapracownicy[pracownicy];
     int i = 0;
