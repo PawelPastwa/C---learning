@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
 int main()
 {
@@ -21,8 +19,7 @@ int main()
     float ok;
     float ow;
     float ppw;
-
-
+    float pi = 3.14;
 
     //instrukcje
 
@@ -38,15 +35,15 @@ int main()
 
     printf("Podaj promien kuli\n");
     scanf("%f", &e);
-    ppk = 4*M_PI*e*e;
-    ok = (4/3.0)*M_PI*pow(e, 3);
+    ppk = 4*pi*e*e;
+    ok = (4.0/3)*pi*e*e*e;
 
     printf("Podaj promien i wysokosc walca\n");
     scanf("%f %f", &f, &g);
-    ow = M_PI*(f*f)*g;
-    ppw = 2*M_PI*f*g + 2*M_PI*(f*f);
+    ow = pi*(f*f)*g;
+    ppw = 2*pi*f*g + 2*pi*(f*f);
 
-    printf("Objetosc szescianu wynosi:\n%f\nPole powierzchni szescianu wynosi:\n%f\n\nObjetosc prostopadloscianu wynosi:\n%f\nPole powierzchni prostopadloscianu wynosi:\n%f\n\nObjetosc kuli wynosi:\n%f\nPole powierzcni kuli wynosi:\n%f\n\nObjetosc walca wynosi:\n%f\nPole powierzchni walca wynosi:\n%f", os, pps, op, ppp, ok, ppk, ow, ppw);
+    printf("Objetosc szescianu wynosi:\n%f\nPole powierzchni szescianu wynosi:\n%f\n\nObjetosc prostopadloscianu wynosi:\n%f\nPolepowierzchni prostopadloscianu wynosi:\n%f\n\nObjetosc kuli wynosi:\n%f\nPole powierzcni kuli wynosi:\n%f\n\nObjetosc walca wynosi:\n%f\nPole powierzchni walca wynosi:\n%f", os, pps, op, ppp, ok, ppk, ow, ppw);
 
     return 0;
 }
