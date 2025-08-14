@@ -22,8 +22,13 @@ int main()
 
     while(n != 0)
     {
-        printf("Podaj ocene z egzaminu\n");
+        printf("Podaj ocene z egzaminu (2-5)\n");
         scanf("%f", &x);
+        while(x < 2 || x > 5)
+        {
+            printf("Podaj poprawna ocene (2-5):\n");
+            scanf("%f", &x);
+        }
         s += x;
         n--;
     }
