@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 int main()
@@ -15,12 +14,23 @@ int main()
     //instrukcje
     printf("Podaj liczbe egzaminow:\n");
     scanf("%d", &egzaminy);
+    while (egzaminy <= 0)
+    {
+        printf("Podaj prawidlowa liczbe egzaminow:\n");
+        scanf("%d", &egzaminy);
+    }
 
     while (egzaminy > 0)
     {
-        printf("Podaj przedmiot i ocene:\n");
-        scanf("%s %f", przedmiot, &ocena);
-
+        printf("Podaj przedmiot:\n");
+        scanf("%s", przedmiot);
+        printf("Podaj ocene z %s (2-5):\n", przedmiot);
+        scanf("%f", &ocena);
+        while (ocena < 2 || ocena > 5)
+        {
+            printf("Podaj poprawna ocene z %s (2-5):\n", przedmiot);
+            scanf("%f", &ocena);
+        }
 
         if (ocena > najwyzsza_ocena)
             {
@@ -29,6 +39,6 @@ int main()
             }
      egzaminy--;
     }
-    printf("przedmiot z najwyzsza ocena:\n%s\nocena:\n%f", przedmiot_topocena, najwyzsza_ocena);
+    printf("przedmiot/ 1 z przedmiotow z najwyzsza ocena:\n%s\nocena:\n%f", przedmiot_topocena, najwyzsza_ocena);
     return 0;
 }
