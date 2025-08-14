@@ -25,21 +25,41 @@ int main()
 
     printf("Podaj dlugosc boku szescianu\n");
     scanf("%f", &a);
+    while(a <= 0)
+    {
+        printf("Podaj poprawna dlugosc boku:\n");
+        scanf("%f", &a);
+    }
     os = a*a*a;
     pps = a*a*6;
 
     printf("Podaj dlugosc bokow prostopadloscianu\n");
     scanf("%f %f %f", &b, &c, &d);
+    while(b <= 0 || c <= 0 || d <= 0)
+    {
+        printf("Podaj poprawna dlugosc bokow:\n");
+        scanf("%f %f %f", &b, &c, &d);
+    }
     op = b*c*d;
     ppp = b*c*2 + b*d*2 + c*d*2;
 
     printf("Podaj promien kuli\n");
     scanf("%f", &e);
+    while(e <= 0)
+    {
+        printf("Podaj poprawny promien:\n");
+        scanf("%f", &e);
+    }
     ppk = 4*pi*e*e;
     ok = (4.0/3)*pi*e*e*e;
 
     printf("Podaj promien i wysokosc walca\n");
     scanf("%f %f", &f, &g);
+    while(f <= 0 || g <= 0)
+    {
+        printf("Podaj poprawny promien i wysokosc walca:\n");
+        scanf("%f %f", &f, &g);
+    }
     ow = pi*(f*f)*g;
     ppw = 2*pi*f*g + 2*pi*(f*f);
 
