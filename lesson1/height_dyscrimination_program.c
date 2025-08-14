@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
@@ -12,6 +11,12 @@ int main()
 
     printf("Podaj liczbe osob\n");
     scanf("%d", &lstudentow);
+
+    while (lstudentow <= 0)
+    {
+        printf("Podaj poprawna liczbe studentow:\n");
+        scanf("%d", &lstudentow);
+    }
 
     while (lstudentow != 0)
     {
