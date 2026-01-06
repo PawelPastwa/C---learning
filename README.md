@@ -30,7 +30,4 @@ lesson 10 - Complex data types. Structures and unions.
 
 lesson 11 - Complex data types. Files.
 
-My current objective is to learn as much as possible to gain more knowlage. I'm open for
-any intership/job offer :)
-
 uploding files/codes - work in progress...
