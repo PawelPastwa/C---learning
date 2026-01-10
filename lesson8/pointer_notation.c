@@ -33,33 +33,33 @@ int main(void) {
 }
 
 int min(int* tab, int n){
-    int min = tab[0];
+    int min = *tab;
     for (int i = 1; i < n; ++i) {
-        if (min > tab[i]){
-            min = tab[i];
+        if (min > *(tab+i)){
+            min = *(tab+i);
         }
     }
     printf("Element minimalny tablicy to: ");
     return min;
 }
 float srednia(int* tab, int n){
-    int suma = tab[0];
+    int suma = *tab;
     for (int i = 1; i < n; ++i) {
-        suma += tab[i];
+        suma += *(tab+i);
     }
     printf("Srednia liczb w tablicy wynosi: ");
     return (float)suma / (float)n;
 }
 void losuj(int* tab, int n){
     for (int i = 0; i < n; ++i) {
-        tab[i] = rand() % 10;
-        printf("%d\n", tab[i]);
+        *(tab+i) = rand() % 10;
+        printf("%d\n", *(tab+i));
     }
 }
 int ileRazy(int* tab, int n, int x){
     int ile = 0;
     for (int i = 0; i < n; ++i) {
-        if (tab[i] == x){
+        if (*(tab+i) == x){
             ile++;
         }
     }
