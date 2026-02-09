@@ -1,6 +1,6 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-//prototypy
 void ciaga(int n);
 
 int main() {
@@ -15,22 +15,28 @@ int main() {
 
 void ciaga(int n)
 {
-    int r = 0, liczba, i, poprzednia = 0, srednia = 0, suma = 0, licznik = 0, c = 0;
-    for (i = 1; i <= n; i++)
+    int liczba = 0, poprzednia = 0, r_last, r;
+    bool x = true;
+    printf("\nPodaj liczbe\n");
+    scanf("%d", &poprzednia);
+
+    for (int i = 2; i <= n; i++)
     {
         printf("\nPodaj liczbe\n");
         scanf("%d", &liczba);
-        if (i == 1) poprzednia = 0, r = 0;
-        else
-        {
-            r = liczba - poprzednia;
-            suma += r;
-            licznik++;
+        r = liczba - poprzednia;
+
+        if (i > 2) {
+            if (r != r_last) {
+                x = false;
+                break;
+            }
         }
+        r_last = r;
         poprzednia = liczba;
     }
-    srednia = suma/(float)licznik;
-    if (srednia != r) c = 1;
-    if (c == 1) printf("\nTo nie jest ciag arytmetyczny\n");
-    else printf("\nTo jest ciag arytmetyczny a jego roznica wynosi %d\n", r);
+    if(x == true)
+        printf("Ciag jest arytmetyczny");
+    else
+        printf("Ciag nie jest arytmetyczny");
 }
